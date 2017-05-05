@@ -19,7 +19,7 @@ function init() {
 
     // Init CSS
     // =========================
-    TweenMax.set('.feature', {x:100, y:170, display:'block'})
+    TweenMax.set('.feature', {x:0, y:170, display:'block'})
     TweenMax.set('.logo-container', {y:26});
     TweenMax.set('.cta-arrow', {rotation:45, transformOrigin:'50% 50%'});
     TweenMax.set('.panel-03', {x:-300});
@@ -28,8 +28,8 @@ function init() {
     TweenMax.set('.graph-line', {scaleX:0});
     TweenMax.set('#fr-logo-intro', {opacity:1});
     TweenMax.set('.cloud1', {x:10, y:320});
-    TweenMax.set('.cloud2', {x:140, y:290});
-    TweenMax.set('.cloud3', {x:200, y:200});
+    TweenMax.set('.cloud2', {x:40, y:290});
+    TweenMax.set('.cloud3', {x:100, y:200});
 
 
 
@@ -51,7 +51,7 @@ function init() {
 
     $('.frame-2 p').html('LIVING THE<br>HIGH LIFE');
     $('.frame-3 p').html('A CLOSER<br>LOOK AT<br>LIVING<br>IN LUXURY');
-    $('.frame-4 p').html('MIX BUSINESS<br>AND LEISURE<br>WITH THE AFR');
+    $('.frame-4 p').html('MIX<br>BUSINESS<br>AND<br>LEISURE<br>WITH<br>THE AFR');
     $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH');
 
     $('.cta-copy').html('Find out more');
@@ -140,12 +140,13 @@ function start() {
 
 
     function featureAnimation() {
-        tlFeature.to('.feature', 6, {ease: Back.easeOut.config(1), scale:0.9, x:90, y:-70})
-                 .to('.cloud2', 6, {ease: Power1.easeInOut, x:"-=20", y:"-=20"}, "-=6")
-                 .to('.cloud3', 8, {ease: Power1.easeInOut, x:"-=20", y:"-=20"}, "-=6")
-                 .to('.cloud1', 4, {ease: Power1.easeInOut, x:"-=20", y:"-=20"}, "-=8")
+        tlFeature.to('.feature', 7, {ease: Back.easeOut.config(2), scale:0.7, x:-30, y:-60})
+                 .to('.feature', 7.5, {ease: Power3.easeIn, scale:0.6, x:-30, y:-50})
+                 .to('.cloud2', 4, {ease: Power1.easeInOut, x:"-=30", y:"-=10"}, "-=20")
+                 .to('.cloud3', 8, {ease: Power1.easeInOut, x:"-=50", y:"-=20"}, "-=15")
+                 .to('.cloud1', 4, {ease: Power1.easeInOut, x:"-=30", y:"+=20"}, "-=15")
                 //  .to('.feature', 3, {ease: Power1.easeInOut, scale:0.6, x:120, y:-30}, "-=9.5")
-                 .to('.feature', 5.5, {ease: Back.easeIn.config(1), scale:0.8, x:70, y:-50}, '-=5.1')
+                 //.to('.feature', 6.5, {ease: Power3.easeIn, scale:0.6, x:-30, y:-50}, '-=6')
         ;
         }
 
