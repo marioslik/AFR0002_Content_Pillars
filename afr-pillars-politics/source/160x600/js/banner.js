@@ -129,8 +129,8 @@ function start() {
 
 
     function featureAnimation() {
-        tlFeature.to('.feature', 1, {ease:Power1.easeInOut, scale:0.25, x:30, y:-5, delay:4.9})
-                 .to('.feature', 0.75, {ease:Power1.easeInOut, x:400, delay:3})
+        tlFeature.to('.feature', 1, {ease:Power1.easeInOut, scale:0.25, x:50, y:-5, delay:4.9})
+                 .to('.feature', 0.75, {ease:Power1.easeInOut, x:300, delay:3})
                  .set('.feature', {autoAlpha:0})
 
 
