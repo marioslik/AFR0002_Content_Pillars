@@ -26,10 +26,10 @@ function init() {
     TweenMax.set('.logo-container', {y:26})
     TweenMax.set('.cta-arrow', {rotation:45, transformOrigin:'50% 50%'})
 
-    TweenMax.set('.feature', {x:0, y:0, display:'block'})
-    TweenMax.set('.panel-03', {x:-300}) // Reset the panels
-    TweenMax.set('.panel-04', {x:-300}) // Reset the panels
-    TweenMax.set('.panel-05', {x:-300}) // Reset the panels
+    TweenMax.set('.feature', {x:150, y:0, scale:0.7, display:'block'})
+    TweenMax.set('.panel-03', {x:-728}); // Reset the panels
+    TweenMax.set('.panel-04', {x:-728}); // Reset the panels
+    TweenMax.set('.panel-05', {x:-728}); // Reset the panels
     TweenMax.set('.eye', {alpha:0})
     TweenMax.set('#droid-1', {scale:1, transformOrigin:"100% 0%", x:50})
     TweenMax.set('#droid-2', {scale:1, transformOrigin:"100% 0%", x:50})
@@ -47,7 +47,7 @@ function init() {
 
     $('.frame-2 p').html('PARANOID<br>DROID')
     $('.frame-3 p').html('THE RISE OF<br>AUTOMATION')
-    $('.frame-4 p').html('STAY AHEAD<br>OF THE CURVE<br>WITH THE AFR')
+    $('.frame-4 p').html('STAY AHEAD OF THE<br>CURVE WITH THE AFR')
     $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH')
 
     $('.cta-copy').html('Find out more')
@@ -127,20 +127,20 @@ function start() {
     function featureAnimation() {
 
 
-        tlFeature.to('.feature', 0.5, {ease:Power1.easeOut, y:-220, rotation:0})
+        tlFeature.to('.feature', 0.5, {ease:Power1.easeOut, y:-225, rotation:0})
                  .to('.main-droid .eye', 0.75, {ease: RoughEase.ease.config({ template: Power0.easeNone, strength: 1, points: 30, taper: "none", randomize: true, clamp: false }), alpha:1, delay:0.5})
-                 .to('.feature', 0.85, {ease:Power3.easeInOut, x:45}, "+=1.5")
-                 .to('#droid-1', 0.85, {ease:Power3.easeInOut, scale:0.6, alpha:1, x:33, y:67}, "-=0.85")
-                 .to('#droid-2', 0.85, {ease:Power3.easeInOut, scale:0.55, alpha:0.9, x:-8, y:73}, "-=0.85")
-                 .to('#droid-3', 0.85, {ease:Power3.easeInOut, scale:0.5, alpha:0.8, x:-44, y:79}, "-=0.85")
-                 .to('#droid-4', 0.85, {ease:Power3.easeInOut, scale:0.45, alpha:0.7, x:-76, y:87}, "-=0.85")
+                 .to('.feature', 0.85, {ease:Power3.easeInOut, x:230, y:"-=10"}, "+=1.5")
+                 .to('#droid-1', 0.85, {ease:Power3.easeInOut, scale:0.65, alpha:1, x:26, y:12}, "-=0.85")
+                 .to('#droid-2', 0.85, {ease:Power3.easeInOut, scale:0.6, alpha:0.9, x:-18, y:16}, "-=0.85")
+                 .to('#droid-3', 0.85, {ease:Power3.easeInOut, scale:0.55, alpha:0.8, x:-54, y:24}, "-=0.85")
+                 .to('#droid-4', 0.85, {ease:Power3.easeInOut, scale:0.5, alpha:0.7, x:-86, y:32}, "-=0.85")
                  .staggerTo('.clone .eye', 0.3, {ease: RoughEase.ease.config({ template: Power0.easeNone, strength: 1, points: 30, taper: "none", randomize: true, clamp: false }), alpha:1, delay:0.5}, -0.07)
                  .call(eyesFlickering, [], this, "-=1.8")
                  .to('#droid-4', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:50, y:0, delay:0.4})
                  .to('#droid-3', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:50, y:0}, "-=1.1")
                  .to('#droid-2', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:50, y:0}, "-=1.1")
                  .to('#droid-1', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:50, y:0}, "-=1.1")
-                 .to('.feature', 1.1, {ease:Power3.easeInOut, x:300, autoAlpha:0}, "-=0.97")
+                 .to('.feature', 1.1, {ease:Power3.easeInOut, x:340, autoAlpha:0}, "-=0.97")
                  ;
         }
 
@@ -152,12 +152,12 @@ function start() {
     tl//.set('.feature', {x:0, y:0, display:'block'})
       .set('.bg-image-01', {x:0, y:0, display:'block'})
       .set('#fr-logo-intro', {opacity:1})
-      .to('.panel-01', 1.6, {y:250, ease:Power1.easeInOut})
-      .to('.panel-02', 1.1, {y:195, ease:Power1.easeInOut, backgroundColor:"#ffffff", opacity:1, onComplete: () => {
-          TweenMax.set('.panel-01', {y:-250}) // Reset the panels
+      .to('.panel-01', 1.6, {x:500, ease:Power1.easeInOut})
+      .to('.panel-02', 1.1, {x:500, ease:Power1.easeInOut, backgroundColor:"#ffffff", opacity:1, onComplete: () => {
+          TweenMax.set('.panel-01', {x:-768}) // Reset the panels
 
       }}, '-=1.1')
-      .to('#fr-logo-intro', 1.1, {ease:Power1.easeInOut, top:"209px"}, "-=1.1")
+      .to('#fr-logo-intro', 1.1, {ease:Power1.easeInOut, left:"518px"}, "-=1.1")
       .to('#tag-line-intro', 1.1, {ease:Power1.easeInOut, opacity:0}, "-=1.1")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
       .call(featureAnimation, [], this, "-=0.5")
@@ -169,9 +169,9 @@ function start() {
       .staggerTo('.frame-3 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut, delay:3.5}, -0.08)
 
       .add('frame04', "-=0.6")
-      .to('.panel-05', 1.6, {x:0, ease:Power1.easeInOut}, 'frame04')
-      .to('.panel-04', 1.3, {x:0, ease:Power1.easeInOut}, 'frame04+=.3')
-      .to('.panel-03', 1.1, {x:0, ease:Power1.easeInOut}, 'frame04+=.5')
+      .to('.panel-05', 1.6, {x:-222, ease:Power1.easeInOut}, 'frame04')
+      .to('.panel-04', 1.3, {x:-222, ease:Power1.easeInOut}, 'frame04+=.3')
+      .to('.panel-03', 1.1, {x:-222, ease:Power1.easeInOut}, 'frame04+=.5')
 
       .staggerFrom('.frame-4 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut}, 0.08, 'frame04+=1')
       .staggerTo('.frame-4 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut, delay:2}, 0.08)
@@ -182,8 +182,8 @@ function start() {
 
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
-      .to('.panel-02', 1, {y:170, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-21, ease:Power1.easeInOut}, "-=1.3")
+      .to('.panel-02', 1, {y:'+=0', ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-10, ease:Power1.easeInOut}, "-=1.3")
       .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
       .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
       .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
@@ -197,6 +197,6 @@ function start() {
 
     // Testing
     // =========================
-    // tl.pause(3)
+     //tl.pause(5)
 
 }
