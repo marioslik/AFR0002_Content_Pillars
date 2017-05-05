@@ -19,7 +19,7 @@ function init() {
 
     // Init CSS
     // =========================
-    TweenMax.set('.feature', {x:0, y:0, display:'block'})
+    TweenMax.set('.feature', {x:-20, y:0, display:'block'})
     TweenMax.set('.logo-container', {y:26});
     TweenMax.set('.cta-arrow', {rotation:45, transformOrigin:'50% 50%'});
     TweenMax.set('.panel-03', {x:-300});
@@ -27,10 +27,10 @@ function init() {
     TweenMax.set('.panel-05', {x:-300});
     TweenMax.set('.graph-line', {scaleX:0});
     TweenMax.set('#fr-logo-intro', {opacity:1});
-    TweenMax.set('.ladder', {y:-1000, left:"195px", width:"130px"});
-    TweenMax.set('.cloud3', {top:"94px", left:"100px", width:"160px"});
+    TweenMax.set('.ladder', {y:-900, left:"95px", width:"90px"});
+    TweenMax.set('.cloud3', {top:"94px", left:"70px", width:"160px"});
     TweenMax.set('.cloud2', {top:"120px", left:"50px", width:"140px"});
-    TweenMax.set('.cloud1', {left:"160px", top:"220px", width:"160px"});
+    TweenMax.set('.cloud1', {left:"30px", top:"220px", width:"160px"});
     TweenMax.set('.cloud4', {top:"220px", left:"210px", width:"240px"});
 
 
@@ -51,7 +51,7 @@ function init() {
 
     $('.frame-2 p').html('THE SKY\'S<br>THE LIMIT');
     $('.frame-3 p').html('CLIMBING<br>THE<br>CORPORATE<br>LADDER');
-    $('.frame-4 p').html('TAKE THE<br>LEAD WITH<br>THE AFR');
+    $('.frame-4 p').html('TAKE<br>THE LEAD<br>WITH<br>THE AFR');
     $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH');
 
     $('.cta-copy').html('Find out more');
@@ -134,11 +134,12 @@ function start() {
     }
 
     function featureAnimation() {
-        tlFeature.to('.ladder', 6, {ease: Back.easeOut.config(1), y:20})
-                 .fromTo('.cloud4', 6, {ease: Power1.easeInOut, y:-190}, {y:90}, "-=6")
-                 .fromTo('.cloud2', 16, {ease: Power1.easeInOut, y:30}, {y:290}, "-=10")
-                 .fromTo('.cloud3', 10, {ease: Power1.easeInOut, y:-290}, {y:270}, "-=16")
-                 .fromTo('.cloud1', 16, {ease: Power1.easeInOut, y:-300}, {y:90}, "-=16")
+        tlFeature.to('.ladder', 4, {ease: Back.easeOut.config(1), y:170})
+                 .fromTo('.cloud4', 9, {ease: Power1.easeInOut, y:-190}, {y:370}, "-=6")
+                 .fromTo('.cloud2', 16, {ease: Power1.easeInOut, y:30}, {y:270}, "-=10")
+                 .fromTo('.cloud3', 10, {ease: Power1.easeInOut, y:-290}, {y:290}, "-=16")
+                 .fromTo('.cloud1', 16, {ease: Power1.easeInOut, y:-300}, {y:100}, "-=16")
+                 .to('.ladder', 3, {ease: Power1.easeInOut, y:210}, "-=9")
         ;
         }
 
@@ -156,7 +157,7 @@ function start() {
       .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"539px"}, "-=1.3")
       .to('#tag-line-intro', 1.3, {ease:Power1.easeInOut, opacity:0}, "-=1.3")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
-      .call(featureAnimation, [], this, "-=0.9")
+      .call(featureAnimation, [], this, "-=1.7")
 
       .staggerFrom('.frame-2 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut}, -0.08, "-=0.1")
       .staggerTo('.frame-2 p .splitLines', 0.8, {y:40, alpha:0, ease:Power1.easeInOut, delay:2}, -0.08)
@@ -169,15 +170,18 @@ function start() {
       .to('.panel-05', 1.6, {x:0, ease:Power1.easeInOut}, 'frame04')
       .to('.panel-04', 1.3, {x:0, ease:Power1.easeInOut}, 'frame04+=.3')
       .to('.panel-03', 1.1, {x:0, ease:Power1.easeInOut}, 'frame04+=.5')
+
       .staggerFrom('.frame-4 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut}, 0.08, 'frame04+=1')
-      .staggerTo('.frame-4 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut, delay:1.5}, 0.08)
+      .staggerTo('.frame-4 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut, delay:2}, 0.08)
+
+
 
       .staggerFrom('.frame-5 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut}, 0.08)
 
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
-      .to('.panel-02', 1, {y:485, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-21, ease:Power1.easeInOut}, "-=1.3")
+      .to('.panel-02', 1, {y:460, ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-24, ease:Power1.easeInOut}, "-=1.3")
       .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
       .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
       .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
