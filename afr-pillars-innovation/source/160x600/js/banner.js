@@ -127,20 +127,21 @@ function start() {
     function featureAnimation() {
 
 
-        tlFeature.to('.feature', 0.65, {ease:Power1.easeOut, y:40, rotation:0})
+        tlFeature.to('.feature', 0.65, {ease:Power1.easeOut, y:35, rotation:0})
                  .to('.main-droid .eye', 0.75, {ease: RoughEase.ease.config({ template: Power0.easeNone, strength: 1, points: 30, taper: "none", randomize: true, clamp: false }), alpha:1, delay:0.5})
-                 .to('.feature', 0.85, {ease:Power3.easeInOut, x:40}, "+=1.5")
-                 .to('#droid-1', 0.85, {ease:Power3.easeInOut, scale:0.75, alpha:1, x:34, y:29}, "-=0.85")
-                 .to('#droid-2', 0.85, {ease:Power3.easeInOut, scale:0.65, alpha:0.9, x:5, y:49}, "-=0.85")
-                 .to('#droid-3', 0.85, {ease:Power3.easeInOut, scale:0.6, alpha:0.8, x:-28, y:79}, "-=0.85")
-                 .to('#droid-4', 0.85, {ease:Power3.easeInOut, scale:0.55, alpha:0.7, x:-60, y:95}, "-=0.85")
+                 .to('.feature', 0.85, {ease:Power3.easeInOut, x:10}, "+=1.5")
+                 .to('.main-droid', 0.85, {ease:Power3.easeInOut, y:'+=10'}, "-=0.85")
+                 .to('#droid-1', 0.85, {ease:Power3.easeInOut, scale:0.75, alpha:1, x:40, y:4}, "-=0.85")
+                 .to('#droid-2', 0.85, {ease:Power3.easeInOut, scale:0.7, alpha:0.9, x:25, y:0}, "-=0.85")
+                 .to('#droid-3', 0.85, {ease:Power3.easeInOut, scale:0.65, alpha:0.8, x:8, y:0}, "-=0.85")
+                 .to('#droid-4', 0.85, {ease:Power3.easeInOut, scale:0.6, alpha:0.7, x:-10, y:0}, "-=0.85")
                  .staggerTo('.clone .eye', 0.3, {ease: RoughEase.ease.config({ template: Power0.easeNone, strength: 1, points: 30, taper: "none", randomize: true, clamp: false }), alpha:1, delay:0.5}, -0.07)
                  .call(eyesFlickering, [], this, "-=1.8")
-                 .to('#droid-4', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:50, y:0, delay:0.4})
+                 .to('#droid-4', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:10, y:0, delay:0.4})
                  .to('#droid-3', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:50, y:0}, "-=1.1")
                  .to('#droid-2', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:50, y:0}, "-=1.1")
                  .to('#droid-1', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:50, y:0}, "-=1.1")
-                 .to('.feature', 1.1, {ease:Power3.easeInOut, x:300, autoAlpha:0}, "-=0.97")
+                 .to('.feature', 1.1, {ease:Power3.easeInOut, x:300, y:'+=30', autoAlpha:0}, "-=0.75")
                  ;
         }
 
