@@ -421,6 +421,15 @@ p {
     z-index: 1;
 }
 
+#overlay {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0089cf+0,0089cf+100&1+0,0+100 */
+    background: -moz-linear-gradient(left, rgba(0,137,207,1) 0%, rgba(0,137,207,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,137,207,1) 0%,rgba(0,137,207,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,137,207,1) 0%,rgba(0,137,207,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0089cf', endColorstr='#000089cf',GradientType=1 ); /* IE6-9 */
+    z-index: 400;
+}
+
 .house {
     position: absolute;
     top: -200px;

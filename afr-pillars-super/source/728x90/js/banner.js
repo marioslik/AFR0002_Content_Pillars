@@ -24,6 +24,7 @@ function init() {
     TweenMax.set('.panel-03', {x:-728});
     TweenMax.set('.panel-04', {x:-728});
     TweenMax.set('.panel-05', {x:-728});
+    //TweenMax.set('#overlay', {width:'528px', height:'100%', position:'absolute', left:'0px', top:'0px'});
 
     // Feature images
     // =========================
@@ -109,13 +110,14 @@ function start() {
 
 
     function featureAnimation() {
-        tlFeature.set('.feature', {x:-80, y:-72, scale:0.8})
+        tlFeature.set('.feature', {x:-60, y:-72, scale:0.7})
                  .set('.pig-lid-image', {transformOrigin:"0% 100%"})
-                 .to('.feature', 1, {ease:Power1.easeInOut, y:-175})
+                 .to('.feature', 1, {ease:Power1.easeInOut, y:-179})
                  .to('.pig-lid-image', 1.25, {ease:Power3.easeIn, rotation:50, delay:0.25})
-                 .to('.pig-lid-image', 0.75, {x:"+=20", rotation:110})
-                 .to('.feature', 1, {ease:Power1.easeInOut, x:-550, y:-180, delay:0.8})
-                 .to('.feature', 1.5, {ease:Power1.easeIn, autoAlpha:0, delay:2.7})
+                 .to('.pig-lid-image', 0.75, {x:"+=20", y:'+=20', rotation:110})
+                 .to('.feature', 0.5, {ease:Power1.easeIn, x:-350, scale:0.8, y:-182, delay:0.8})
+                 .to('.feature', 0.5, {ease:Power1.easeOut, x:-550, scale:0.8, y:-195})
+                 .to('.feature', 1.5, {ease:Power1.easeIn, autoAlpha:0, y: 100, delay:2.7})
                  ;
         }
 
