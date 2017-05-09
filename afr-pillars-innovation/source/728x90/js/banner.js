@@ -26,7 +26,7 @@ function init() {
     TweenMax.set('.logo-container', {y:26})
     TweenMax.set('.cta-arrow', {rotation:45, transformOrigin:'50% 50%'})
 
-    TweenMax.set('.feature', {x:150, y:0, scale:0.7, display:'block'})
+    TweenMax.set('.feature', {x:150, y:0, scale:0.6, display:'block'})
     TweenMax.set('.panel-03', {x:-728}); // Reset the panels
     TweenMax.set('.panel-04', {x:-728}); // Reset the panels
     TweenMax.set('.panel-05', {x:-728}); // Reset the panels
@@ -127,9 +127,9 @@ function start() {
     function featureAnimation() {
 
 
-        tlFeature.to('.feature', 0.5, {ease:Power1.easeOut, y:-225, rotation:0})
+        tlFeature.to('.feature', 0.5, {ease:Power1.easeOut, y:-235, rotation:0})
                  .to('.main-droid .eye', 0.75, {ease: RoughEase.ease.config({ template: Power0.easeNone, strength: 1, points: 30, taper: "none", randomize: true, clamp: false }), alpha:1, delay:0.5})
-                 .to('.feature', 0.85, {ease:Power3.easeInOut, x:230, y:"-=10"}, "+=1.5")
+                 .to('.feature', 0.85, {ease:Power3.easeInOut, scale:0.7, x:235, y:"-=0"}, "+=1.5")
                  .to('#droid-1', 0.85, {ease:Power3.easeInOut, scale:0.65, alpha:1, x:26, y:12}, "-=0.85")
                  .to('#droid-2', 0.85, {ease:Power3.easeInOut, scale:0.6, alpha:0.9, x:-18, y:16}, "-=0.85")
                  .to('#droid-3', 0.85, {ease:Power3.easeInOut, scale:0.55, alpha:0.8, x:-54, y:24}, "-=0.85")

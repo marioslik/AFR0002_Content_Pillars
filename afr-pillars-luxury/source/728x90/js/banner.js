@@ -145,7 +145,7 @@ function start() {
                  .to('.cloud3', 8, {ease: Power1.easeInOut, x:"+=40", y:"-=40"}, "-=6")
                  .to('.cloud1', 6, {ease: Power1.easeInOut, x:"+=90", y:"-=30"}, "-=8")
                 //  .to('.feature', 3, {ease: Power1.easeInOut, scale:0.6, x:120, y:-30}, "-=9.5")
-                 .to('.feature', 5, {ease: Back.easeOut.config(1), scale:0.45, x:120, y:-40}, '-=4')
+                 .to('.feature', 6, {ease: Power1.easeIn, scale:0.25, x:100, y:-25}, '-=5.5')
         ;
         }
 

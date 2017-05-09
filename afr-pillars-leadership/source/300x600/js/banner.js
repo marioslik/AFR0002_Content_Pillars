@@ -156,7 +156,7 @@ function start() {
       .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"539px"}, "-=1.3")
       .to('#tag-line-intro', 1.3, {ease:Power1.easeInOut, opacity:0}, "-=1.3")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
-      .call(featureAnimation, [], this, "-=0.9")
+      .call(featureAnimation, [], this, "-=1.1")
 
       .staggerFrom('.frame-2 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut}, -0.08, "-=0.1")
       .staggerTo('.frame-2 p .splitLines', 0.8, {y:40, alpha:0, ease:Power1.easeInOut, delay:2}, -0.08)

@@ -38,7 +38,7 @@ function init() {
 
     $('.frame-2 p').html('GET<br>STRAIGHT<br>TO THE<br>BOTTOM<br>LINE');
     $('.frame-3 p').html('THE BIG<br>INVESTMENT<br>IN SMALL <br>BUSINESS');
-    $('.frame-4 p').html('KNOW<br>THE<br>STATE OF <br>BUSINESS<br>WITH<br>THE AFR');
+    $('.frame-4 p').html('BE THE<br>BUSINESS<br>WITH<br>THE AFR');
     $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH');
 
     $('.cta-copy').html('Find out more');
@@ -176,7 +176,7 @@ function start() {
 
     function featureAnimation() {
         tlFeature.set('.feature', {x:0})
-                 .set('#main-iceberg', {scale:1.5, x:-100, y:10, transformOrigin:"50% 50%"})
+                 //.set('#main-iceberg', {scale:1.5, x:-100, transformOrigin:"50% 50%"})
                  .set('#main-iceberg .dollar', {alpha:0.7})
                  .set('#main-iceberg .iceberg', {alpha:0.95})
                  .set('#iceberg2', {x:-200, y:27, scale:1.5})
@@ -188,15 +188,17 @@ function start() {
                  .set('#iceberg3 .dollar', {alpha:0})
                  .set('#iceberg3', {alpha:0})
                  .set('.feature', {y:-92})
-                 .set('#water', {x:-250, y:-20})
+                 .set('#water', {x:-250, y:-7})
                  .call(bounceMainIceberg, [], this, "")
                  .call(bounceMainIceberg3, [], this, "")
                  .call(bounceIceberg2, [], this, "")
                  .call(bounceIceberg3, [], this, "")
                  .call(animateWaves, [], this, "")
 
+
                  .to('.feature', 1.5, {ease:Power1.easeInOut, y:-107})
-                 .to('#water', 1.5, {ease:Power1.easeInOut, y:"-=21"}, "-=1.5")
+                 .to('#water', 1.5, {ease:Power1.easeInOut, y:-41, bottom:"40px"}, "-=1.5")
+                 .to('#main-iceberg', 0.5, {ease:Power1.easeInOut, y:'+=10'}, "-=1.5")
                  .to('#iceberg2', 1.5, {ease:Power1.easeInOut, scale:0.4, x:18}, "-=1.5")
                  .to('#iceberg2 .dollar', 1.5, {ease:Power1.easeInOut, alpha:0.4}, "-=1.5")
 
@@ -238,7 +240,7 @@ function start() {
           TweenMax.set('.panel-01', {y:-250}) // Reset the panels
 
       }}, '-=1.3')
-      .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"539px"}, "-=1.3")
+      .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"543px"}, "-=1.3")
       .to('#tag-line-intro', 1.3, {ease:Power1.easeInOut, opacity:0}, "-=1.3")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
       .call(featureAnimation, [], this, "-=0.8")
@@ -262,8 +264,8 @@ function start() {
 
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
-      .to('.panel-02', 1, {y:485, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-11, ease:Power1.easeInOut}, "-=1.3")
+      .to('.panel-02', 1, {y:460, ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-28, ease:Power1.easeInOut}, "-=1.3")
       .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
       .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
       .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')

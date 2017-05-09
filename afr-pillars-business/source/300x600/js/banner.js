@@ -38,7 +38,7 @@ function init() {
 
     $('.frame-2 p').html('GET STRAIGHT<br>TO THE<br>BOTTOM LINE');
     $('.frame-3 p').html('THE BIG<br>INVESTMENT<br>IN SMALL <br>BUSINESS');
-    $('.frame-4 p').html('KNOW THE<br>STATE OF <br>BUSINESS<br>WITH THE AFR');
+    $('.frame-4 p').html('BE THE<br>BUSINESS<br>WITH<br>THE AFR');
     $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH');
 
     $('.cta-copy').html('Find out more');
@@ -156,8 +156,8 @@ function start() {
 
     function featureAnimation() {
         tlFeature.set('.feature', {x:0})
-                 .set('#main-iceberg', {scale:0.95, x:-10, transformOrigin:"50% 40%"})
-                 .set('#main-iceberg .dollar', {alpha:0.7})
+                 .set('#main-iceberg', {scale:1, x:-5, transformOrigin:"50% 40%"})
+                 .set('#main-iceberg .dollar', {alpha:1})
                  .set('#main-iceberg .iceberg', {alpha:0.95})
                  .set('#iceberg2', {x:-12, y:24, scale:0.4})
                  .set('#iceberg2 .iceberg', {alpha:0.7})
@@ -178,7 +178,7 @@ function start() {
                  .to('#iceberg2', 1.5, {ease:Power1.easeInOut, scale:0.4, x:2}, "-=1.5")
                  .to('#iceberg2 .dollar', 1.5, {ease:Power1.easeInOut, alpha:0.4}, "-=1.5")
 
-                 .to('#main-iceberg', 1.5, {ease:Power1.easeInOut, scale:0.7, y:33, x:40}, "-=1.5")
+                 .to('#main-iceberg', 1.5, {ease:Power1.easeInOut, scale:0.9, y:33, x:15}, "-=1.5")
                  //.add(TweenMax.to('#main-iceberg', 1.5, {repeat:-1, repeatDelay:0, yoyo: true, y:17.5, ease: Power1.easeInOut}), "-=0.5")
                  //.call(bounceMainIceberg2, [], this, "")
 
@@ -192,7 +192,7 @@ function start() {
                  .to('.feature', 1, {ease:Power1.easeInOut, y:-138, delay:2})
                  .to('#water', 1, {ease:Power1.easeInOut, y:"-=18"}, "-=1")
 
-                 .to('#main-iceberg', 1, {ease:Power1.easeInOut, scale:0.65, y:19, x:45}, "-=1")
+                 .to('#main-iceberg', 1, {ease:Power1.easeInOut, scale:0.8, y:19, x:30}, "-=1")
 
                  .to('.feature', 1.5, {ease:Power1.easeIn, y:102, autoAlpha:0, delay:3.7})
                  .to('#water', 1.5, {ease:Power1.easeIn, y:"+=244"}, "-=1.5")

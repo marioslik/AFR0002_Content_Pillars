@@ -38,7 +38,7 @@ function init() {
 
     $('.frame-2 p').html('GET STRAIGHT TO<br>THE BOTTOM LINE');
     $('.frame-3 p').html('THE BIG INVESTMENT<br>IN SMALL BUSINESS');
-    $('.frame-4 p').html('KNOW THE STATE<br>OF BUSINESS<br>WITH THE AFR');
+    $('.frame-4 p').html('BE THE BUSINESS<br>WITH THE AFR');
     $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
 
     $('.cta-copy').html('Find out more');

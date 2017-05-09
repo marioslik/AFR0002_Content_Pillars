@@ -157,7 +157,7 @@ function start() {
           TweenMax.set('.panel-01', {y:-250}) // Reset the panels
 
       }}, '-=1.3')
-      .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"539px"}, "-=1.3")
+      .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"543px"}, "-=1.3")
       .to('#tag-line-intro', 1.3, {ease:Power1.easeInOut, opacity:0}, "-=1.3")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
       .call(featureAnimation, [], this, "-=0.7")
@@ -181,8 +181,8 @@ function start() {
 
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
-      .to('.panel-02', 1, {y:485, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-11, ease:Power1.easeInOut}, "-=1.3")
+      .to('.panel-02', 1, {y:460, ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-28, ease:Power1.easeInOut}, "-=1.3")
       .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
       .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
       .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')

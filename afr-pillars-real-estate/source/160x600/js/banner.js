@@ -120,6 +120,7 @@ function start() {
                  .to('.feature', 3, {ease:Back.easeOut, y:-160, rotation:0})
                  .to('.house', 0.5, {ease:Power1.easeOut, y:280, opacity:1}, "-=1.5")
                  .to('.roof', 0.7, {ease:Sine.easeOut, y:321, opacity:1}, "-=2.7")
+                 .to('#smoke', 0.7, {ease:Back.easeOut, opacity:1}, "-=1.5")
                  .to('.tree', 0.7, {ease:Back.easeOut, y:300, opacity:1, scale:1}, "-=1.5")
                  .to('.feature', 4, {ease:Power1.easeInOut, x:10, y:-160, rotation:4, scale:1}, "-=0.3")
                  .to('.feature', 1.5, {ease:Power1.easeInOut, autoAlpha:0}, "-=0.2")
@@ -137,7 +138,7 @@ function start() {
           TweenMax.set('.panel-01', {y:-250}) // Reset the panels
 
       }}, '-=1.3')
-      .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"539px"}, "-=1.3")
+      .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"543px"}, "-=1.3")
       .to('#tag-line-intro', 1.3, {ease:Power1.easeInOut, opacity:0}, "-=1.3")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
       .call(featureAnimation, [], this, "-=0.9")
@@ -160,7 +161,7 @@ function start() {
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
       .to('.panel-02', 1, {y:460, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-24, ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-28, ease:Power1.easeInOut}, "-=1.3")
       .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
       .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
       .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')

@@ -110,13 +110,14 @@ function start() {
 
 
     function featureAnimation() {
-        tlFeature.set('.feature', {x:-60, y:-72, scale:0.7})
-                 .set('.pig-lid-image', {transformOrigin:"0% 100%"})
-                 .to('.feature', 1, {ease:Power1.easeInOut, y:-179})
+        tlFeature.set('.feature', {x:-320, y:-72, scale:0.7})
+                 .set('.pig-lid-image', {transformOrigin:"0% 100%", x:370})
+                 .to('.feature', 1, {ease:Power1.easeInOut, y:-185})
                  .to('.pig-lid-image', 1.25, {ease:Power3.easeIn, rotation:50, delay:0.25})
                  .to('.pig-lid-image', 0.75, {x:"+=20", y:'+=20', rotation:110})
-                 .to('.feature', 0.5, {ease:Power1.easeIn, x:-350, scale:0.8, y:-182, delay:0.8})
-                 .to('.feature', 0.5, {ease:Power1.easeOut, x:-550, scale:0.8, y:-195})
+                //  .to('.feature', 0.5, {ease:Power1.easeIn, x:-350, scale:0.8, y:-182, delay:0.8})
+                //  .to('.feature', 0.5, {ease:Power1.easeOut, x:-550, scale:0.8, y:-195})
+                 .to('.feature', 1, {ease:Power1.easeOut, x:-850, scale:0.8, y:-195, delay:0.9})
                  .to('.feature', 1.5, {ease:Power1.easeIn, autoAlpha:0, y: 100, delay:2.7})
                  ;
         }

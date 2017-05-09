@@ -41,7 +41,7 @@ function init() {
 
     $('.frame-2 p').html('GET STRAIGHT TO<br>THE BOTTOM LINE');
     $('.frame-3 p').html('THE BIG INVESTMENT<br>IN SMALL BUSINESS');
-    $('.frame-4 p').html('KNOW THE STATE OF<br>BUSINESS WITH THE AFR');
+    $('.frame-4 p').html('BE THE BUSINESS<br>WITH THE AFR');
     $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
 
     $('.cta-copy').html('Find out more');
@@ -196,7 +196,7 @@ function start() {
                  .to('#iceberg2', 1, {ease:Power1.easeInOut, x:45, alpha:1}, "-=1")
                  .to('#iceberg3', 1, {ease:Power1.easeInOut, alpha:1}, "-=1")
 
-                 .to('#main-iceberg', 1, {ease:Power1.easeInOut, scale:0.65, y:19, x:70}, "-=1")
+                 .to('#main-iceberg', 1, {ease:Power1.easeInOut, scale:0.65, y:20, x:70}, "-=1")
 
                  .to('.feature', 1.5, {ease:Power1.easeIn, y:102, autoAlpha:0, delay:3.7})
                  .to('#water', 1.5, {ease:Power1.easeIn, y:"+=244"}, "-=1.5")

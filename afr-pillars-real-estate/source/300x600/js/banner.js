@@ -120,6 +120,7 @@ function start() {
                  .to('.feature', 3, {ease:Back.easeOut, y:-210, rotation:0})
                  .to('.house', 0.5, {ease:Power1.easeOut, y:280, opacity:1}, "-=1.5")
                  .to('.roof', 0.7, {ease:Sine.easeOut, y:321, opacity:1}, "-=2.7")
+                 .to('#smoke', 0.7, {ease:Back.easeOut, opacity:1}, "-=1.5")
                  .to('.tree', 0.7, {ease:Back.easeOut, y:300, opacity:1, scale:1}, "-=1.5")
                  .to('.feature', 4, {ease:Power1.easeInOut, x:40, y:-175, rotation:5, scale:1.1}, "-=0.3")
                  .to('.feature', 1.5, {ease:Power1.easeInOut, autoAlpha:0}, "-=0.2")

@@ -34,7 +34,7 @@ function init() {
     TweenMax.set('#droid-1', {scale:1, transformOrigin:"100% 0%", x:50})
     TweenMax.set('#droid-2', {scale:1, transformOrigin:"100% 0%", x:50})
     TweenMax.set('#droid-3', {scale:1, transformOrigin:"100% 0%", x:50})
-    TweenMax.set('#droid-4', {scale:1, transformOrigin:"100% 0%", x:50})
+    TweenMax.set('#droid-4', {scale:1, transformOrigin:"100% 0%", x:50, alpha:0})
 
     // Feature images
     // =========================
@@ -134,7 +134,7 @@ function start() {
                  .to('#droid-1', 0.85, {ease:Power3.easeInOut, scale:0.75, alpha:1, x:40, y:4}, "-=0.85")
                  .to('#droid-2', 0.85, {ease:Power3.easeInOut, scale:0.7, alpha:0.9, x:25, y:0}, "-=0.85")
                  .to('#droid-3', 0.85, {ease:Power3.easeInOut, scale:0.65, alpha:0.8, x:8, y:0}, "-=0.85")
-                 .to('#droid-4', 0.85, {ease:Power3.easeInOut, scale:0.6, alpha:0.7, x:-10, y:0}, "-=0.85")
+                 .to('#droid-4', 0.85, {ease:Power3.easeInOut, scale:0, alpha:0, x:-10, y:0}, "-=0.85")
                  .staggerTo('.clone .eye', 0.3, {ease: RoughEase.ease.config({ template: Power0.easeNone, strength: 1, points: 30, taper: "none", randomize: true, clamp: false }), alpha:1, delay:0.5}, -0.07)
                  .call(eyesFlickering, [], this, "-=1.8")
                  .to('#droid-4', 1.1, {ease:Power3.easeInOut, scale:1, alpha:0, x:10, y:0, delay:0.4})
@@ -158,7 +158,7 @@ function start() {
           TweenMax.set('.panel-01', {y:-250}) // Reset the panels
 
       }}, '-=1.3')
-      .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"539px"}, "-=1.3")
+      .to('#fr-logo-intro', 1.3, {ease:Power1.easeInOut, top:"543px"}, "-=1.3")
       .to('#tag-line-intro', 1.3, {ease:Power1.easeInOut, opacity:0}, "-=1.3")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
       .call(featureAnimation, [], this, "-=0.7")
@@ -184,7 +184,7 @@ function start() {
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
       .to('.panel-02', 1, {y:460, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-24, ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-28, ease:Power1.easeInOut}, "-=1.3")
       .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
       .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
       .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
