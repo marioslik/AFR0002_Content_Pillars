@@ -142,7 +142,7 @@ function start() {
     }
 
     function bounceIceberg3(){
-        tlIceberg3.to('#iceberg3', 1, {repeat:10, repeatDelay:0, yoyo: true, y:"+=1" , ease: Power1.easeInOut});
+        tlIceberg3.to('#iceberg3', 1, {repeat:10, repeatDelay:0, yoyo: true, y:"+=4" , ease: Power1.easeInOut});
     }
 
 
@@ -162,7 +162,7 @@ function start() {
                  .set('#iceberg2', {x:-12, y:24, scale:0.4})
                  .set('#iceberg2 .iceberg', {alpha:0.7})
                  .set('#iceberg2 .dollar', {alpha:0})
-                 .set('#iceberg3', {x:130, y:20, scale:0.65})
+                 .set('#iceberg3', {x:148, y:19, scale:0.67})
                  .set('#iceberg3 .iceberg', {alpha:0.6})
                  .set('#iceberg3 .dollar', {alpha:0})
                  .set('.feature', {y:-102})
@@ -179,20 +179,12 @@ function start() {
                  .to('#iceberg2 .dollar', 1.5, {ease:Power1.easeInOut, alpha:0.4}, "-=1.5")
 
                  .to('#main-iceberg', 1.5, {ease:Power1.easeInOut, scale:0.9, y:33, x:15}, "-=1.5")
-                 //.add(TweenMax.to('#main-iceberg', 1.5, {repeat:-1, repeatDelay:0, yoyo: true, y:17.5, ease: Power1.easeInOut}), "-=0.5")
-                 //.call(bounceMainIceberg2, [], this, "")
-
-
-                 .to('#iceberg3', 1.5, {ease:Power1.easeInOut, scale:0.45, x:169}, "-=1.5")
+                 .to('#iceberg3', 1.5, {ease:Power1.easeInOut, scale:0.45, x:169, y:21}, "-=1.5")
                  .to('#iceberg3 .dollar', 1.5, {ease:Power1.easeInOut, alpha:0.3}, "-=1.5")
-
-
-
-
                  .to('.feature', 1, {ease:Power1.easeInOut, y:-138, delay:2})
                  .to('#water', 1, {ease:Power1.easeInOut, y:"-=18"}, "-=1")
 
-                 .to('#main-iceberg', 1, {ease:Power1.easeInOut, scale:0.8, y:19, x:30}, "-=1")
+                 .to('#main-iceberg', 1, {ease:Power1.easeInOut, scale:0.8, y:14, x:30}, "-=1")
 
                  .to('.feature', 1.5, {ease:Power1.easeIn, y:102, autoAlpha:0, delay:3.7})
                  .to('#water', 1.5, {ease:Power1.easeIn, y:"+=244"}, "-=1.5")

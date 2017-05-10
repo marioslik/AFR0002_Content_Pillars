@@ -145,7 +145,7 @@ function start() {
     }
 
     function bounceIceberg3(){
-        tlIceberg3.to('#iceberg3', 1, {repeat:10, repeatDelay:0, yoyo: true, y:"+=2" , ease: Power1.easeInOut});
+        tlIceberg3.to('#iceberg3', 1, {repeat:10, repeatDelay:0, yoyo: true, y:"-=2" , ease: Power1.easeInOut});
     }
 
 
@@ -159,13 +159,13 @@ function start() {
 
     function featureAnimation() {
         tlFeature
-                 .set('#main-iceberg', {scale:1.2, x:0, y:20, transformOrigin:"50% 40%"})
+                 .set('#main-iceberg', {scale:1.2, x:0, y:15, transformOrigin:"50% 40%"})
                  .set('#main-iceberg .dollar', {alpha:0.7})
                  .set('#main-iceberg .iceberg', {alpha:0.95})
                  .set('#iceberg2', {x:28, y:28, scale:0.4, alpha:0})
                  .set('#iceberg2 .iceberg', {alpha:0.7})
                  .set('#iceberg2 .dollar', {alpha:0})
-                 .set('#iceberg3', {x:130, y:28, scale:0.65, alpha:0})
+                 .set('#iceberg3', {x:130, y:25, scale:0.65, alpha:0})
                  .set('#iceberg3 .iceberg', {alpha:0.6})
                  .set('#iceberg3 .dollar', {alpha:0})
 
@@ -222,7 +222,7 @@ function start() {
       .to('#fr-logo-intro', 1.1, {ease:Power1.easeInOut, left:"518px"}, "-=1.1")
       .to('#tag-line-intro', 1.1, {ease:Power1.easeInOut, opacity:0}, "-=1.1")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
-      .call(featureAnimation, [], this, "-=0.5")
+      .call(featureAnimation, [], this, "-=0.9")
 
       .staggerFrom('.frame-2 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut}, -0.08, "-=0.1")
       .staggerTo('.frame-2 p .splitLines', 0.8, {y:40, alpha:0, ease:Power1.easeInOut, delay:1.5}, -0.08)

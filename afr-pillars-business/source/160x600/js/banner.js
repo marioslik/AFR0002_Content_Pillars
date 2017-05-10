@@ -152,26 +152,6 @@ function start() {
 
 
 
-    // tlFeature.set('.feature', {x:0})
-    //          .set('#main-iceberg', {scale:1.5, x:-100, y:10, transformOrigin:"50% 50%"})
-    //          .set('#main-iceberg .dollar', {alpha:0.7})
-    //          .set('#main-iceberg .iceberg', {alpha:0.95})
-    //          .set('#iceberg2', {x:-200, y:27, scale:1.5})
-    //          .set('#iceberg2 .iceberg', {alpha:0.7})
-    //          .set('#iceberg2 .dollar', {alpha:0})
-    //          .set('#iceberg3', {x:20, y:27, scale:1.5})
-    //          .set('#iceberg3 .iceberg', {alpha:0.6})
-    //          .set('#iceberg3 .dollar', {alpha:0})
-    //          .set('.feature', {y:-92})
-    //          .set('#water', {x:-250, y:-20})
-    //          .call(bounceMainIceberg, [], this, "")
-    //          .call(bounceMainIceberg3, [], this, "")
-    //          .call(bounceIceberg2, [], this, "")
-    //          .call(bounceIceberg3, [], this, "")
-    //          .call(animateWaves, [], this, "")
-
-
-
 
 
     function featureAnimation() {
@@ -183,7 +163,7 @@ function start() {
                  .set('#iceberg2 .iceberg', {alpha:0.7})
                  .set('#iceberg2 .dollar', {alpha:0})
                  .set('#iceberg2', {alpha:0})
-                 .set('#iceberg3', {x:20, y:27, scale:1.5})
+                 .set('#iceberg3', {x:20, y:23, scale:1.5})
                  .set('#iceberg3 .iceberg', {alpha:0.6})
                  .set('#iceberg3 .dollar', {alpha:0})
                  .set('#iceberg3', {alpha:0})
@@ -196,29 +176,23 @@ function start() {
                  .call(animateWaves, [], this, "")
 
 
-                 .to('.feature', 1.5, {ease:Power1.easeInOut, y:-107})
+                 .to('.feature', 1.5, {ease:Power1.easeInOut, y:-116})
                  .to('#water', 1.5, {ease:Power1.easeInOut, y:-41, bottom:"40px"}, "-=1.5")
                  .to('#main-iceberg', 0.5, {ease:Power1.easeInOut, y:'+=10'}, "-=1.5")
+
                  .to('#iceberg2', 1.5, {ease:Power1.easeInOut, scale:0.4, x:18}, "-=1.5")
                  .to('#iceberg2 .dollar', 1.5, {ease:Power1.easeInOut, alpha:0.4}, "-=1.5")
 
                  .to('#main-iceberg', 1.5, {ease:Power1.easeInOut, scale:1, y:45, x:-10}, "-=1.5")
-                 //.add(TweenMax.to('#main-iceberg', 1.5, {repeat:-1, repeatDelay:0, yoyo: true, y:17.5, ease: Power1.easeInOut}), "-=0.5")
-                 //.call(bounceMainIceberg2, [], this, "")
-
 
                  .to('#iceberg3', 1.5, {ease:Power1.easeInOut, scale:0.45, x:129}, "-=1.3")
                  .to('#iceberg3 .dollar', 1.5, {ease:Power1.easeInOut, alpha:0.3}, "-=1.5")
-                 .to('#iceberg2, #iceberg3', 1, {ease:Power1.easeInOut, alpha:1}, "+=3.5")
-
-
-
+                 .to('#iceberg2, #iceberg3', 1, {ease:Power1.easeInOut, alpha:0}, "+=3.5")
 
                  .to('.feature', 1, {ease:Power1.easeInOut, y:-118}, "-=2")
                  .to('#water', 1, {ease:Power1.easeInOut, y:"-=10"}, "-=1")
-
                  .to('#main-iceberg', 1, {ease:Power1.easeInOut, scale:0.65, y:19, x:45}, "-=1")
-
+                 .to('#iceberg2, #iceberg3', 1, {ease:Power1.easeInOut, alpha:1}, "-=0.5")
                  .to('.feature', 1.5, {ease:Power1.easeIn, y:102, autoAlpha:0, delay:3.7})
                  .to('#water', 1.5, {ease:Power1.easeIn, y:"+=224"}, "-=1.5")
 
