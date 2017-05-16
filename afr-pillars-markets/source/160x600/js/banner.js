@@ -36,7 +36,7 @@ function init() {
   }), TweenMax.set("#bull-extra", {
     drawSVG: "0%",
     immediateRender: !1
-  }), bgImage01 = "skybg.jpg", $(".frame-2 p").html("MARKET<br>BULLS<br>CHARGE<br>AHEAD"), $(".frame-3 p").html("GLOBAL<br>MARKETS<br>TAKE<br>SHAPE"), $(".frame-4 p").html("MASTER<br>THE<br>MARKETS<br>WITH<br>THE AFR"), $(".frame-5 p").html("TRY<br>THE AFR<br>FREE FOR<br>1 MONTH"), $(".cta-copy").html("Find out more"), $(".bg-image-01").attr("src", bgImage01), $(".feature-image").attr("src", featureImage), $(".house").attr("src", houseImage), $(".roof").attr("src", roofImage), $(".tree").attr("src", treeImage), clickTag = "http://google.com", $("#banner").on("click", function() {
+  }), bgImage01 = "skybg.jpg", $(".frame-2 p").html("MARKET<br>BULLS<br>CHARGE<br>AHEAD"), $(".frame-3 p").html('Ride the<br>Global<br>market<br>rodeo'), $(".frame-4 p").html("MASTER<br>THE<br>MARKETS<br>WITH<br>THE AFR"), $(".frame-5 p").html("TRY<br>THE AFR<br>FREE FOR<br>1 MONTH"), $(".cta-copy").html("Find out more"), $(".bg-image-01").attr("src", bgImage01), $(".feature-image").attr("src", featureImage), $(".house").attr("src", houseImage), $(".roof").attr("src", roofImage), $(".tree").attr("src", treeImage), clickTag = "http://google.com", $("#banner").on("click", function() {
     console.log("clicktag invoked"), window.open(window.clickTag)
   }), timingValues = "1,3,7,10,13", timingValues = timingValues.split(","), frame01 = timingValues[0], frame02 = timingValues[1], frame03 = timingValues[2], frame04 = timingValues[3], frame05 = timingValues[4];
   var e = ["skybg.jpg"];
@@ -142,7 +142,24 @@ function start() {
   }, "frame04+=.3").to(".panel-03", 1.1, {
     x: 0,
     ease: Power1.easeInOut
-  }, "frame04+=.5").staggerFrom(".frame-4 p .splitLines", .8, {
+  }, "frame04+=.5")
+  .to(".panel-02", 1, {
+    y: 460,
+    ease: Power1.easeInOut
+  }, "-=1.3").to("#fr-logo-intro", 1, {
+    y: -28,
+    ease: Power1.easeInOut
+  }, "-=1.3").to("#tag-line-intro", 1, {
+    ease: Power1.easeInOut,
+    opacity: 1
+  }, "-=1.3").to("#tag-line-intro .fr-logo-path", 1, {
+    ease: Power1.easeInOut,
+    fill: "#1289ca"
+  }, "-=1.3").from("#tag-line", 1, {
+    alpha: 0,
+    ease: Power1.easeOut
+  }, "endFrame+=1")
+  .staggerFrom(".frame-4 p .splitLines", .8, {
     y: 30,
     alpha: 0,
     ease: Power1.easeInOut
@@ -159,20 +176,6 @@ function start() {
     alpha: 0,
     y: 20,
     ease: Power1.easeOut
-  }, "-=0.2").to(".panel-02", 1, {
-    y: 460,
-    ease: Power1.easeInOut
-  }, "-=1.3").to("#fr-logo-intro", 1, {
-    y: -28,
-    ease: Power1.easeInOut
-  }, "-=1.3").to("#tag-line-intro", 1, {
-    ease: Power1.easeInOut,
-    opacity: 1
-  }, "-=1.3").to("#tag-line-intro .fr-logo-path", 1, {
-    ease: Power1.easeInOut,
-    fill: "#1289ca"
-  }, "-=1.3").from("#tag-line", 1, {
-    alpha: 0,
-    ease: Power1.easeOut
-  }, "endFrame+=1")
+  }, "-=0.2")
+  ;
 }

@@ -68,6 +68,10 @@ p {
   overflow: hidden;
 }
 
+#banner, #preloader {
+  border: 1px solid #efefef;
+}
+
 .frame {
   display: table;
   text-align: center;
@@ -136,6 +140,7 @@ p {
   text-align: left;
   font-size: 27px;
   line-height: 27px;
+  text-transform: uppercase;
 }
 
 .panel-container .panel-04 {
@@ -173,7 +178,7 @@ p {
 
 .frame-3 p {
   position: absolute;
-  top: 90px;
+  top: 70px;
 }
 
 .frame-4 p,
@@ -182,6 +187,7 @@ p {
   line-height: 30px;
   margin: 0;
   font-family: 'Proxima Nova Light';
+  text-transform: uppercase;
 }
 
 .pig-lid-image {

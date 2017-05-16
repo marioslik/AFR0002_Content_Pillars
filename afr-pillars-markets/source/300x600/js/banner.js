@@ -40,7 +40,7 @@ function init() {
 
 
     $('.frame-2 p').html('MARKET<br>BULLS<br>CHARGE<br>AHEAD');
-    $('.frame-3 p').html('GLOBAL<br>MARKETS<br>TAKE<br>SHAPE');
+    $('.frame-3 p').html('Ride the<br>Global<br>market<br>rodeo');
     $('.frame-4 p').html('MASTER THE<br>MARKETS<br>WITH THE AFR');
     $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH');
 
@@ -148,6 +148,13 @@ function start() {
       .to('.panel-05', 1.6, {x:0, ease:Power1.easeInOut}, 'frame04')
       .to('.panel-04', 1.3, {x:0, ease:Power1.easeInOut}, 'frame04+=.3')
       .to('.panel-03', 1.1, {x:0, ease:Power1.easeInOut}, 'frame04+=.5')
+
+      .to('.panel-02', 1, {y:485, ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-24, ease:Power1.easeInOut}, "-=1.3")
+      .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
+      .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
+      .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
+
       .staggerFrom('.frame-4 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut}, 0.08, 'frame04+=1')
       .staggerTo('.frame-4 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut, delay:1.5}, 0.08)
 
@@ -155,11 +162,7 @@ function start() {
 
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
-      .to('.panel-02', 1, {y:485, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-24, ease:Power1.easeInOut}, "-=1.3")
-      .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
-      .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
-      .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
+
 
       ;
 

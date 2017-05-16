@@ -169,6 +169,7 @@ p {
         text-align: left;
         font-size: 25px;
         line-height: 1.1;
+        text-transform: uppercase;
     }
 }
 
@@ -188,6 +189,7 @@ p {
         text-align: left;
         font-size: 25px;
         line-height: 1.1;
+        text-transform: uppercase;
     }
 }
 
@@ -196,13 +198,14 @@ p {
 
 .frame-4 {
     position: absolute;
-    top: 60px;
+    top: 40px;
     z-index: 1400;
     p {
         margin: 0;
         font-family: 'Proxima Nova Light';
         font-size: 28px;
         line-height: 30px;
+        text-transform: uppercase;
     }
 }
 
@@ -218,6 +221,7 @@ p {
         font-family: 'Proxima Nova Light';
         font-size: 28px;
         line-height: 30px;
+        text-transform: uppercase;
     }
 }
 

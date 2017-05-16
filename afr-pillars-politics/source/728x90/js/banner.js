@@ -37,7 +37,7 @@ function init() {
     // =========================
 
 
-    $('.frame-2 p').html('ECONOMY<br>CLASS');
+    $('.frame-2 p').html("SEE WHO'S PULLING<br>THE STRINGS");
     $('.frame-3 p').html("THE POLITICAL PLAYS<br>SHAPING AUSTRALIA");
     $('.frame-4 p').html('KNOW THE STATE OF BUSINESS<br>WITH THE AFR');
     $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
@@ -137,7 +137,7 @@ function start() {
 
     function featureAnimation() {
         tlFeature.to('.feature', 1, {ease:Power1.easeInOut, scale:0.13, x:335, y:-232, delay:4.2})
-                 .to('.feature', 0.75, {ease:Power1.easeInOut, x:326, delay:4})
+                 .to('.feature', 0.75, {ease:Power1.easeInOut, x:356, delay:4})
                  .set('.feature', {autoAlpha:0})
 
 
@@ -180,6 +180,12 @@ function start() {
       .to('.panel-04', 1.3, {x:-222, ease:Power1.easeInOut}, 'frame04+=.3')
       .to('.panel-03', 1.1, {x:-222, ease:Power1.easeInOut}, 'frame04+=.5')
 
+      .to('.panel-02', 1, {y:"+=0", ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-10, ease:Power1.easeInOut}, "-=1.3")
+      .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
+      .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
+      .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
+
       .staggerFrom('.frame-4 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut}, 0.08, 'frame04+=1')
       .staggerTo('.frame-4 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut, delay:2}, 0.08)
 
@@ -187,11 +193,7 @@ function start() {
 
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
-      .to('.panel-02', 1, {y:"+=0", ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-10, ease:Power1.easeInOut}, "-=1.3")
-      .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
-      .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
-      .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
+
 
       ;
 

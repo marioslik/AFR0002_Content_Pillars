@@ -114,7 +114,7 @@ function start() {
                  .to('.feature', 1, {ease:Power1.easeInOut, y:-207})
                  .to('.pig-lid-image', 1.25, {ease:Power3.easeIn, rotation:50, delay:0.25})
                  .to('.pig-lid-image', 0.75, {y:"+=100", x:"+=20", rotation:110})
-                 .to('.feature', 1, {ease:Power1.easeInOut, y:-197, x:-426, delay:0.8})
+                 .to('.feature', 1, {ease:Power1.easeInOut, y:-197, x:-406, delay:0.8})
                  .to('.feature', 1.5, {ease:Power1.easeIn, y:102, autoAlpha:0, delay:2.7})
                  ;
         }
@@ -153,6 +153,14 @@ function start() {
       .to('.panel-05', 1.6, {x:0, ease:Power1.easeInOut}, 'frame04')
       .to('.panel-04', 1.3, {x:0, ease:Power1.easeInOut}, 'frame04+=.3')
       .to('.panel-03', 1.1, {x:0, ease:Power1.easeInOut}, 'frame04+=.5')
+
+
+      .to('.panel-02', 1, {y:170, ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:-21, ease:Power1.easeInOut}, "-=1.3")
+      .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
+      .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
+      .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
+
       .staggerFrom('.frame-4 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut}, 0.08, 'frame04+=1')
 
       .staggerTo('.frame-4 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut, delay:2}, 0.08)
@@ -161,11 +169,6 @@ function start() {
 
 
       .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
-      .to('.panel-02', 1, {y:170, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-21, ease:Power1.easeInOut}, "-=1.3")
-      .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
-      .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
-      .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
 
       ;
 
