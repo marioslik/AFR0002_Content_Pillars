@@ -40,7 +40,7 @@ function init() {
 
 
     $('.frame-2 p').html('MARKET BULLS<br>CHARGE AHEAD');
-    $('.frame-3 p').html('Ride the Global<br>market rodeo');
+    $('.frame-3 p').html('Head the<br>investment herd');
     $('.frame-4 p').html('MASTER THE<br>MARKETS<br>WITH THE AFR');
     $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
 
@@ -154,7 +154,7 @@ function start() {
       .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
       .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
       .from('#tag-line', 1, {alpha:0, ease:Power1.easeOut}, 'endFrame+=1')
-      
+
       .staggerFrom('.frame-4 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut}, 0.08, 'frame04+=1')
       .staggerTo('.frame-4 p .splitLines', 0.8, {y:-30, alpha:0, ease:Power1.easeInOut, delay:1.5}, 0.08)
 
