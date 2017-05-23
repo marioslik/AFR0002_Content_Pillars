@@ -40,7 +40,7 @@ function init() {
 
 
     $('.frame-2 p').html('MARKET<br>BULLS<br>CHARGE<br>AHEAD');
-    $('.frame-3 p').html('Head the<br>investment<br>herd');
+    $('.frame-3 p').html('Global<br>markets<br>take<br>shape');
     $('.frame-4 p').html('MASTER THE<br>MARKETS<br>WITH THE AFR');
     $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH');
 
