@@ -19,7 +19,7 @@ function init() {
 
     // Init CSS
     // =========================
-    TweenMax.set('.feature', {x:250, y:200, scale:0.5, display:'block'})
+    TweenMax.set('.feature', {x:250, y:110, scale:0.5, display:'block'})
     TweenMax.set('.logo-container', {y:26});
     TweenMax.set('.cta-arrow', {rotation:45, transformOrigin:'50% 50%'});
     TweenMax.set('.panel-03', {x:-728}); // Reset the panels
@@ -145,7 +145,7 @@ function start() {
                  .to('.cloud3', 8, {ease: Power1.easeInOut, x:"+=40", y:"-=40"}, "-=6")
                  .to('.cloud1', 6, {ease: Power1.easeInOut, x:"+=90", y:"-=30"}, "-=8")
                 //  .to('.feature', 3, {ease: Power1.easeInOut, scale:0.6, x:120, y:-30}, "-=9.5")
-                 .to('.feature', 6, {ease: Power1.easeIn, scale:0.25, x:100, y:-25}, '-=5.5')
+                 .to('.feature', 6, {ease: Power1.easeIn, scale:0.35, x:100, y:-45}, '-=5.5')
         ;
         }
 

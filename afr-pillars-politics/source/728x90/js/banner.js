@@ -37,7 +37,7 @@ function init() {
     // =========================
 
 
-    $('.frame-2 p').html("SEE WHO'S PULLING<br>THE STRINGS");
+    $('.frame-2 p').html("WHO'S PULLING<br>THE STRINGS?");
     $('.frame-3 p').html("THE POLITICAL PLAYS<br>SHAPING AUSTRALIA");
     $('.frame-4 p').html('KNOW THE STATE OF BUSINESS<br>WITH THE AFR');
     $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -11,8 +15,8 @@ p {
 #preloader{
     display: block;
     position: absolute;
-    width:($WIDTH - 2)+px;
-    height:($HEIGHT - 2)+px;
+    width:($WIDTH)+px;
+    height:($HEIGHT)+px;
     border: 1px solid #efefef;
     background: #0089cf;
 }
@@ -52,8 +56,8 @@ p {
 #banner{
   display: none;
   position: absolute;
-  width:($WIDTH - 2)+px;
-  height:($HEIGHT - 2)+px;
+  width:($WIDTH)+px;
+  height:($HEIGHT)+px;
   border: 1px solid #efefef;
   overflow: hidden;
 }
@@ -61,10 +65,11 @@ p {
 .frame{
   display: table;
   position: absolute;
-  width:($WIDTH - 2)+px;
-  height:($HEIGHT - 2)+px;
+  width:($WIDTH)+px;
+  height:($HEIGHT)+px;
   text-align: center;
   color:#ffffff;
+  overflow: hidden;
 }
 
 .frame > .inner{
@@ -190,6 +195,7 @@ p {
 
 #water {
   width: 200%;
+  height:198px;
   position: absolute;
   bottom: -50%;
   z-index: 314;
@@ -278,6 +284,7 @@ p {
         width: 100%;
         text-align: center;
         font-size: 17px;
+        line-height: 1;
         transition: left .2s ease-in-out;
     }
     .arrow-circle {
@@ -329,7 +336,13 @@ p {
   z-index: 1305;
   width: 240px;
   left: 30px;
-  opacity:0;
+  opacity:1;
+}
+
+#fr-logo-intro {
+  top:0;
+  width: 240px;
+  height: 50px;
 }
 
 #fr-logo-preloader {

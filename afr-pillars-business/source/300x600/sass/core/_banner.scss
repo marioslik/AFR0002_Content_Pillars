@@ -191,6 +191,7 @@ p {
 
 #water {
   width: 200%;
+  height:198px;
   position: absolute;
   bottom: 25.5px;
   z-index: 314;
@@ -328,9 +329,15 @@ p {
   position: absolute;
   top: 250px;
   z-index: 1305;
-  width: 240px;
-  left: 30px;
+  width: 254px;
+  height: 50px;
+  left: 23px;
   opacity:0;
+}
+
+#fr-logo-intro {
+  width: 254px;
+  height: 50px;
 }
 
 #fr-logo-preloader {

@@ -21,6 +21,7 @@ function init() {
     // =========================
     TweenMax.set('.logo-container', {y:26});
     TweenMax.set('.cta-arrow', {rotation:45, transformOrigin:'50% 50%'});
+    TweenMax.set('#fr-logo-intro', {alpha:1, y:100});
 
     // Feature images
     // =========================
@@ -37,7 +38,7 @@ function init() {
     // =========================
 
 
-    $('.frame-2 p').html("SEE WHO'S<br>PULLING THE<br>STRINGS");
+    $('.frame-2 p').html("WHO'S PULLING<br>THE STRINGS?");
     $('.frame-3 p').html("THE POLITICAL<br>PLAYS SHAPING<br>AUSTRALIA");
     $('.frame-4 p').html('KNOW THE STATE<br>OF BUSINESS<br>WITH THE AFR');
     $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
@@ -163,7 +164,7 @@ function start() {
           TweenMax.set('.panel-01', {y:-250}) // Reset the panels
 
       }}, '-=1.1')
-      .to('#fr-logo-intro', 1.1, {ease:Power1.easeInOut, top:"209px"}, "-=1.1")
+      .to('#fr-logo-intro', 1.1, {ease:Power1.easeInOut, y:208}, "-=1.1")
       .to('#tag-line-intro', 1.1, {ease:Power1.easeInOut, opacity:0}, "-=1.1")
       .to('#logo-lockup-intro .fr-logo-path', 0.5, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=0.85")
       .call(featureAnimation, [], this, "-=0.75")
@@ -180,7 +181,7 @@ function start() {
       .to('.panel-03', 1.1, {x:0, ease:Power1.easeInOut}, 'frame04+=.5')
 
       .to('.panel-02', 1, {y:170, ease:Power1.easeInOut}, "-=1.3")
-      .to('#fr-logo-intro', 1, {y:-21, ease:Power1.easeInOut}, "-=1.3")
+      .to('#fr-logo-intro', 1, {y:'-=21', ease:Power1.easeInOut}, "-=1.3")
       .to('#tag-line-intro', 1, {ease:Power1.easeInOut, opacity:1}, "-=1.3")
       .to('#tag-line-intro .fr-logo-path', 1, {ease:Power1.easeInOut, fill:"#1289ca"}, "-=1.3")
 

@@ -26,7 +26,7 @@ function init() {
     TweenMax.set('.logo-container', {y:26})
     TweenMax.set('.cta-arrow', {rotation:45, transformOrigin:'50% 50%'})
 
-    TweenMax.set('.feature', {x:-22, y:300, display:'block'})
+    TweenMax.set('.feature', {x:-22, y:300, scale:1, display:'block'})
     TweenMax.set('.panel-03', {x:-300}) // Reset the panels
     TweenMax.set('.panel-04', {x:-300}) // Reset the panels
     TweenMax.set('.panel-05', {x:-300}) // Reset the panels

@@ -298,10 +298,15 @@ p {
   position: absolute;
   top: 250px;
   z-index: 1305;
-  width: 252px;
-  height: 49px;
+  width: 254px;
+  height: 50px;
   left: 23px;
   opacity:0;
+}
+
+#fr-logo-intro {
+  width: 254px;
+  height: 50px;
 }
 
 #fr-logo-preloader {
@@ -411,6 +416,7 @@ p {
     position: absolute;
     top: 62px;
     width: 302px;
+    height: 127px;
     left: -3px;
 
     .cls-1 {
@@ -425,6 +431,7 @@ p {
   height: 149px;
   opacity: 1;
   z-index: 499;
+  display: block;
 
   .cls-1 {
     stroke: #fff;
@@ -433,6 +440,7 @@ p {
 
 #bull-bottom {
   position: absolute;
+  height: 99px;
   top: 104px;
   left: -1px;
 }
