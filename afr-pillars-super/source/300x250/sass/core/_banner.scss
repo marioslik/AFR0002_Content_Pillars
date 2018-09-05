@@ -228,27 +228,28 @@ p {
 // ======================
 .button {
     position: absolute;
-    width: 180px;
-    left: 55px;
+    width:130px;
+    height: 35px;
+    left:84px;  
     top: 100px;
     z-index: 1500;
-    height: 40px;
     border-radius: 40px;
     background: transparent;
     transition: background .2s ease-in-out,
                 border .2s ease-in-out,
                 color .2s ease-in-out;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     p {
         margin: 0;
         color: #FFF;
         position: absolute;
-        font-family: 'Proxima Nova Light';
+        font-family: 'Proxima Nova Semibold';
         left: 0;
-        top: 11px;
+        top: 10px;
         width: 100%;
         text-align: center;
-        font-size: 17px;
+        font-size: 14px;
+        line-height: 1;
         transition: left .2s ease-in-out;
     }
     .arrow-circle {
@@ -270,14 +271,14 @@ p {
         position: absolute;
         border-bottom: none;
         border-left: none;
-        top: 5px;
-        left: 4px;
+        top: 2px;
+        left: -35px;
     }
 }
 
 #banner:hover .button {
     background: #00537d;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     p {
         color: #FFF;
         left: -6px;
