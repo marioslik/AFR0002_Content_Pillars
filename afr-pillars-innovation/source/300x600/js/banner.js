@@ -48,9 +48,9 @@ function init() {
     $('.frame-2 p').html('PARANOID<br>DROID')
     $('.frame-3 p').html('THE RISE OF<br>AUTOMATION')
     $('.frame-4 p').html('STAY AHEAD<br>OF THE CURVE<br>WITH THE AFR')
-    $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH')
+    $('.frame-5 p').html('TRY THE AFR<br>FOR HALF<br>THE PRICE')
 
-    $('.cta-copy').html('Find out more')
+    $('.cta-copy').html('Save 50% now')
 
     $('.bg-image-01').attr('src', bgImage01)
     $('.droid').attr('src', featureImage)
@@ -188,8 +188,8 @@ function start() {
       .staggerFrom('.frame-5 p .splitLines', 0.8, {y:30, alpha:0, ease:Power1.easeInOut}, 0.08)
 
 
-      .from('.button', 0.8, {alpha:0, y:20, ease:Power1.easeOut}, "-=0.2")
-
+      .set('.button',{y:-20},0)
+      .from('.button', 0.8, {alpha:0, y:0, ease:Power1.easeOut}, "-=0.2")
       ;
 
 

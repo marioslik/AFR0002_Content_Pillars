@@ -44,9 +44,9 @@ function init() {
     $('.frame-2 p').html('TROUBLE WITH<br>THE BUBBLE?');
     $('.frame-3 p').html('THE RISE AND RISE OF<br>THE PROPERTY MARKET');
     $('.frame-4 p').html('BUILD SUCCESS WITH THE AFR');
-    $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
+    $('.frame-5 p').html('TRY THE AFR<br>FOR HALF THE PRICE');
 
-    $('.cta-copy').html('Find out more');
+    $('.cta-copy').html('Save 50% now');
 
     $('.bg-image-01').attr('src', bgImage01);
     $('.feature-image').attr('src', featureImage);

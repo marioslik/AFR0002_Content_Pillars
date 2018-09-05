@@ -36,7 +36,7 @@ function init() {
   }), TweenMax.set("#bull-extra", {
     drawSVG: "0%",
     immediateRender: !1
-  }), bgImage01 = "skybg.jpg", $(".frame-2 p").html("MARKET<br>BULLS<br>CHARGE<br>AHEAD"), $(".frame-3 p").html('Global<br>markets<br>take<br>shape'), $(".frame-4 p").html("MASTER<br>THE<br>MARKETS<br>WITH<br>THE AFR"), $(".frame-5 p").html("TRY<br>THE AFR<br>FREE FOR<br>1 MONTH"), $(".cta-copy").html("Find out more"), $(".bg-image-01").attr("src", bgImage01), $(".feature-image").attr("src", featureImage), $(".house").attr("src", houseImage), $(".roof").attr("src", roofImage), $(".tree").attr("src", treeImage), clickTag = "http://google.com", $("#banner").on("click", function() {
+  }), bgImage01 = "skybg.jpg", $(".frame-2 p").html("MARKET<br>BULLS<br>CHARGE<br>AHEAD"), $(".frame-3 p").html('Global<br>markets<br>take<br>shape'), $(".frame-4 p").html("MASTER<br>THE<br>MARKETS<br>WITH<br>THE AFR"), $(".frame-5 p").html("TRY THE<br>AFR<br>FOR HALF<br>THE PRICE"), $(".cta-copy").html("Save 50% now"), $(".bg-image-01").attr("src", bgImage01), $(".feature-image").attr("src", featureImage), $(".house").attr("src", houseImage), $(".roof").attr("src", roofImage), $(".tree").attr("src", treeImage), clickTag = "http://google.com", $("#banner").on("click", function() {
     console.log("clicktag invoked"), window.open(window.clickTag)
   }), timingValues = "1,3,7,10,13", timingValues = timingValues.split(","), frame01 = timingValues[0], frame02 = timingValues[1], frame03 = timingValues[2], frame04 = timingValues[3], frame05 = timingValues[4];
   var e = ["skybg.jpg"];

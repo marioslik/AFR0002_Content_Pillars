@@ -37,9 +37,9 @@ function init() {
     $('.frame-2 p').html("WHO'S<br>PULLING<br>THE<br>STRINGS?");
     $('.frame-3 p').html("THE<br>POLITICAL<br>PLAYS<br>SHAPING<br>AUSTRALIA");
     $('.frame-4 p').html('KNOW<br>THE<br>STATE OF<br>BUSINESS<br>WITH<br>THE AFR');
-    $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH');
+    $('.frame-5 p').html('TRY THE<br>AFR<br>FOR HALF<br>THE PRICE');
 
-    $('.cta-copy').html('Find out more');
+    $('.cta-copy').html('Save 50% now');
 
     $('.puppet-shadow').attr('src', puppetShadow);
     $('.bg-image-01').attr('src', bgImage01);

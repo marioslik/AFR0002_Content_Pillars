@@ -52,9 +52,9 @@ function init() {
     $('.frame-2 p').html('THE SKY\'S<br>THE LIMIT');
     $('.frame-3 p').html('CLIMBING<br>THE<br>CORPORATE<br>LADDER');
     $('.frame-4 p').html('TAKE<br>THE LEAD<br>WITH<br>THE AFR');
-    $('.frame-5 p').html('TRY<br>THE AFR<br>FREE FOR<br>1 MONTH');
+    $('.frame-5 p').html('TRY THE<br>AFR<br>FOR HALF<br>THE PRICE');
 
-    $('.cta-copy').html('Find out more');
+    $('.cta-copy').html('Save 50% now');
 
     $('.bg-image-01').attr('src', bgImage01);
     $('.ladder').attr('src', featureImage);

@@ -48,9 +48,9 @@ function init() {
     $('.frame-2 p').html('PARANOID<br>DROID')
     $('.frame-3 p').html('THE RISE OF<br>AUTOMATION')
     $('.frame-4 p').html('STAY AHEAD OF THE<br>CURVE WITH THE AFR')
-    $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH')
+    $('.frame-5 p').html('TRY THE AFR<br>FOR HALF THE PRICE')
 
-    $('.cta-copy').html('Find out more')
+    $('.cta-copy').html('Save 50% now')
 
     $('.bg-image-01').attr('src', bgImage01)
     $('.droid').attr('src', featureImage)

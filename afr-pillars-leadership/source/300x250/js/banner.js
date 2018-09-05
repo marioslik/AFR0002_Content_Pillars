@@ -53,9 +53,9 @@ function init() {
     $('.frame-2 p').html('THE SKY\'S<br>THE LIMIT');
     $('.frame-3 p').html('CLIMBING THE<br>CORPORATE<br>LADDER');
     $('.frame-4 p').html('TAKE THE LEAD<br>WITH THE AFR');
-    $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
+    $('.frame-5 p').html('TRY THE AFR FOR<br>HALF THE PRICE');
 
-    $('.cta-copy').html('Find out more');
+    $('.cta-copy').html('Save 50% now');
 
     $('.bg-image-01').attr('src', bgImage01);
     $('.ladder').attr('src', featureImage);

@@ -4,7 +4,11 @@
   "description": "ultimate banner template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "300x250": "gulp dev --size 300x250",
+    "160x600": "gulp dev --size 160x600",
+    "300x600": "gulp dev --size 300x600",
+    "728x90": "gulp dev --size 728x90"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.22.0",

@@ -39,9 +39,9 @@ function init() {
     $('.frame-2 p').html('SAVING YOUR<br>BACON');
     $('.frame-3 p').html("IT'S TIME TO<br>RETHINK SUPER");
     $('.frame-4 p').html('MOVE ON<br>THE MARKETS<br>WITH THE AFR')
-    $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
+    $('.frame-5 p').html('TRY THE AFR FOR<br>HALF THE PRICE');
 
-    $('.cta-copy').html('Find out more');
+    $('.cta-copy').html('Save 50% now');
 
     $('.bg-image-01').attr('src', bgImage01);
     $('.pig-scene-image').attr('src', pigSceneImage);

@@ -53,9 +53,9 @@ function init() {
     $('.frame-2 p').html('LIVING THE<br>HIGH LIFE');
     $('.frame-3 p').html('A CLOSER<br>LOOK AT LIVING<br>IN LUXURY');
     $('.frame-4 p').html('MIX BUSINESS<br>AND LEISURE<br>WITH THE AFR');
-    $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
+    $('.frame-5 p').html('TRY THE AFR FOR<br>HALF THE PRICE');
 
-    $('.cta-copy').html('Find out more');
+    $('.cta-copy').html('Save 50% now');
 
     $('.bg-image-01').attr('src', bgImage01);
     $('.hot-air').attr('src', featureImage);
